@@ -19,6 +19,8 @@ class Item(db.Model):
 
 
 
+
+
 @app.route('/')
 def index():
     items = Item.query.order_by(Item.price).all()
